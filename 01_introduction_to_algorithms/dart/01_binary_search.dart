@@ -1,4 +1,9 @@
-// Define a function.
+void main() {
+  List<int> list = [1, 3, 5, 7, 9];
+  print(binarySearch(list, 3));
+  print(binarySearch(list, -1));
+}
+
 int? binarySearch(List<int> list, int item) {
   int low = 0;
   int high = list.length - 1;
@@ -15,10 +20,4 @@ int? binarySearch(List<int> list, int item) {
     }
   }
   return null;
-}
-
-void main() {
-  List<int> list = [1, 3, 5, 7, 9];
-  print(binarySearch(list, 3));
-  print(binarySearch(list, -1));
 }
